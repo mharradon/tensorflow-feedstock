@@ -16,3 +16,6 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(10, activation='softmax')
 ])
 
+# This aborts currently
+# See https://github.com/conda-forge/tensorflow-feedstock/issues/492
+from tensorflow.python.eager import profiler_client
